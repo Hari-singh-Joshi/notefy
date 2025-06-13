@@ -7,7 +7,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const nunito = Nunito({ subsets: ["latin"], variable: "--font-nunito" })
-
+import Script from 'next/script';
 export const metadata: Metadata = {
   title: "NotesFy - Your Ultimate Source for BTech CSE Notes",
   description:
@@ -44,6 +44,8 @@ export default function RootLayout({
         <meta name="google-adsense-account" content="ca-pub-7913957132300666" />
         <link rel="icon" href="/img/favicon.jpg" />
         <link rel="apple-touch-icon" href="/img/favicon.jpg" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7913957132300666"
+     crossorigin="anonymous"></script>
       </head>
       <body className={`${inter.variable} ${nunito.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
