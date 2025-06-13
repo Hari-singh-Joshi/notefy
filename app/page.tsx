@@ -15,26 +15,25 @@ import { ScrollToTop } from "@/components/scroll-to-top"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background overflow-hidden bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50">
-      
-      <main className="overflow-hidden mx-4 sm:mx-6 md:mx-10 lg:mx-16">
-
-        <Hero />
-        <About />
-        <Notes />
-        <FeatureCards />
-        <Features />
-        <CallToAction />
-        <Team />
-        <Stats />
-        <QuestionPapers />
-        <LabFiles />
-        <Faq />
-        <CallToActionSecondary />
-        <Contact />
-      </main>
-    
-      <ScrollToTop />
-    </div>
+    <div className="min-h-screen bg-background overflow-x-hidden bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50">
+    <main className="w-full px-4 sm:px-6 md:px-10 lg:px-16 max-w-screen-2xl mx-auto">
+      <Hero />
+      <About />
+      <Notes />
+      <FeatureCards />
+      <Features />
+      <CallToAction />
+      <Team />
+      <Stats />
+      <QuestionPapers />
+      <LabFiles />
+      <Faq />
+      <CallToActionSecondary />
+      <Contact />
+    </main>
+  
+    <ScrollToTop />
+  </div>
+  
   )
 }
