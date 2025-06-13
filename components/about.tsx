@@ -137,7 +137,7 @@ export function About() {
                 className="rounded-lg shadow-xl"
               />
 
-              <div className="absolute -bottom-8 -left-8 w-48 h-48 md:w-64 md:h-64">
+              <div className="absolute -bottom-8 -left-4 w-48 h-48 md:w-64 md:h-64">
                 <Image
                   src="/img/about-me.jpg"
                   alt="Team Discussion"
@@ -148,21 +148,7 @@ export function About() {
               </div>
             </div>
 
-            <motion.div
-              variants={{
-                hidden: { opacity: 0, scale: 0.8 },
-                visible: {
-                  opacity: 1,
-                  scale: 1,
-                  transition: { delay: 0.3, duration: 0.5 },
-                },
-              }}
-              className="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground p-6 rounded-lg shadow-lg z-20 max-w-[200px]">
-              <h3 className="text-xl font-bold">
-                New <span className="block">In Industry</span>
-              </h3>
-              <p className="text-sm mt-2">Best Notes are here.</p>
-            </motion.div>
+           
 
             <div className="absolute -bottom-12 -right-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10" />
             <div className="absolute -top-12 -left-12 w-48 h-48 bg-primary/5 rounded-full blur-2xl -z-10" />
