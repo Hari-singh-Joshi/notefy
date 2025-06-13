@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 export function Notes() {
   const [activeTab, setActiveTab] = useState("sem1")
@@ -205,9 +206,26 @@ export function Notes() {
           <p>Select Your Semester and Download Notes</p>
         </div>
 
-        <Tabs defaultValue="sem1" value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <div className="flex justify-center mb-8">
-            <TabsList className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8">
+        <Tabs defaultValue="sem1" value={activeTab} onValueChange={setActiveTab} className="w-full mb-4">
+          {/* Mobile dropdown for semester selection */}
+          <div className="md:hidden mb-6">
+            <Select value={activeTab} onValueChange={setActiveTab}>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="Select Semester" />
+              </SelectTrigger>
+              <SelectContent>
+                {semesters.map((semester) => (
+                  <SelectItem key={semester.id} value={semester.id}>
+                    {semester.name}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+
+          {/* Desktop tabs */}
+          <div className="hidden md:flex justify-center mb-8">
+            <TabsList className="grid grid-cols-4 lg:grid-cols-8">
               {semesters.map((semester) => (
                 <TabsTrigger key={semester.id} value={semester.id}>
                   {semester.name}
