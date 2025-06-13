@@ -91,12 +91,13 @@ export function Features() {
         >
           <motion.div variants={itemVariants} className="space-y-12">
             {leftFeatures.map((feature, index) => (
-              <div key={index} className="flex flex-row-reverse md:flex-row gap-4 items-start text-right md:text-left">
+              <div key={index} className="flex gap-4 items-start">
+                <div className="bg-muted rounded-lg p-3 flex items-center justify-center">{feature.icon}</div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                   <p className="text-muted-foreground">{feature.description}</p>
                 </div>
-                <div className="bg-muted rounded-lg p-3 flex items-center justify-center">{feature.icon}</div>
+                
               </div>
             ))}
           </motion.div>
