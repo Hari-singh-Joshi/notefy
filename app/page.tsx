@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50">
   <main
-    className="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 flex flex-col items-center text-center"
+    className="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 flex flex-col items-center"
     role="main"
   >
     <Hero />
