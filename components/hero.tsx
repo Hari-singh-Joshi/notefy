@@ -138,7 +138,7 @@ export function Hero() {
                       key={i}
                       className="w-8 h-8 rounded-full bg-primary/20 border-2 border-background flex items-center justify-center text-xs font-medium overflow-hidden"
                     >
-                      {i < 5 ? <AvatarImage i={i} /> : <span>12+</span>}
+                      {i < 6 ? <AvatarImage i={i} /> : <span>12+</span>}
                     </div>
                   ))}
                 </div>
