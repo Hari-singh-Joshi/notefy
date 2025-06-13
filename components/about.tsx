@@ -157,8 +157,7 @@ export function About() {
                   transition: { delay: 0.3, duration: 0.5 },
                 },
               }}
-              className="absolute -bottom-6 right-6 bg-primary text-primary-foreground p-6 rounded-lg shadow-lg z-20 max-w-[200px]"
-            >
+              className="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground p-6 rounded-lg shadow-lg z-20 max-w-[200px]">
               <h3 className="text-xl font-bold">
                 New <span className="block">In Industry</span>
               </h3>
