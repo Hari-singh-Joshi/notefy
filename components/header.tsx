@@ -13,8 +13,8 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
-import { Menu } from "lucide-react"
-
+import { Menu,Box } from "lucide-react"
+ 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -40,7 +40,9 @@ export function Header() {
         )}
       >
         <Link href="/" className="flex items-center space-x-2 pl-4">
-          <span className="text-2xl font-bold text-black-900">NotesFy</span>
+        <Box className="animate-spin text-red-600 w-6 h-6" />
+
+          <span className="text-2xl font-bold text-red-600">NotesFy</span>
         </Link>
 
         <div className="hidden md:flex">
