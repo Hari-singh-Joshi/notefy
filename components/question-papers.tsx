@@ -82,8 +82,8 @@ export function QuestionPapers() {
   ]
 
   return (
-    <section id="services" className="section light-background">
-      <div className="container">
+    <section id="services" className="w-full bg-muted py-16">
+      <div className="w-full px-4 md:px-8">
         <div className="section-title">
           <h2>Old Question Papers</h2>
           <p>Browse the question papers from 1st semester to 8th semester below.</p>
