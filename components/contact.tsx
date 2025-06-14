@@ -41,11 +41,11 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="section light-background">
-      <div className="container">
-        <div className="section-title">
-          <h2>Contact</h2>
-          <p>Here is our contact details</p>
+    <section id="contact" className="w-full bg-muted py-16">
+      <div className="w-full px-4 md:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold">Contact</h2>
+          <p className="text-muted-foreground">Here is our contact details</p>
         </div>
 
         <motion.div
@@ -59,7 +59,7 @@ export function Contact() {
             <Card>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold mb-6">Contact Info</h3>
-                <p className="text-muted-foreground mb-6">We are 24*7 availabe for you.</p>
+                <p className="text-muted-foreground mb-6">We are 24*7 available for you.</p>
 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
@@ -68,8 +68,8 @@ export function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Our Location</h4>
-                      <p className="text-muted-foreground">248001 dhoolkot Street</p>
-                      <p className="text-muted-foreground">Dehradun, Uttrakhand</p>
+                      <p className="text-muted-foreground">248001 Dhoolkot Street</p>
+                      <p className="text-muted-foreground">Dehradun, Uttarakhand</p>
                     </div>
                   </div>
 
@@ -100,8 +100,7 @@ export function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Greet</h4>
-                      <p className="text-muted-foreground">Thank You for Visiting My Website</p>
-                    
+                      <p className="text-muted-foreground">Thank you for visiting my website</p>
                     </div>
                   </div>
                 </div>
@@ -114,7 +113,7 @@ export function Contact() {
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold mb-2">Get In Touch</h3>
                 <p className="text-muted-foreground mb-6">
-                  You can mail us and kindly give us feedback through this form
+                  You can mail us and kindly give us feedback through this form.
                 </p>
 
                 <form action="https://formsubmit.co/joshiharish942@gmail.com" method="POST">
