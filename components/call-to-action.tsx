@@ -27,8 +27,8 @@ export function CallToAction() {
   }
 
   return (
-    <section className="section light-background">
-      <div className="container">
+    <section className="w-full bg-muted py-16">
+      <div className="w-full px-4 md:px-8">
         <motion.div
           ref={ref}
           variants={variants}
