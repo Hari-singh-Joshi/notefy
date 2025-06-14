@@ -27,14 +27,14 @@ export function CallToActionSecondary() {
   }
 
   return (
-    <section className="section dark-background">
+    <section className="section">
       <div className="container">
         <motion.div
           ref={ref}
           variants={variants}
           initial="hidden"
           animate={controls}
-          className="max-w-3xl mx-auto text-center"
+          className="mx-auto text-center"
         >
           <h3 className="text-3xl md:text-4xl font-bold mb-6">Call To Action</h3>
           <p className="text-lg mb-8">
