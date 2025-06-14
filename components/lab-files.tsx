@@ -167,8 +167,8 @@ export function LabFiles() {
   ]
 
   return (
-    <section id="pricing" className="section">
-      <div className="container">
+    <section id="pricing" className="w-full bg-muted py-16">
+      <div className="w-full px-4 md:px-8">
         <div className="section-title">
           <h2>Lab Files</h2>
           <p>Select Your Semester and Download Files</p>
