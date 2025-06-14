@@ -6,7 +6,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { motion, useAnimation, useInView } from "framer-motion"
-import { Play, Trophy, Briefcase, BarChart2, Award, X } from "lucide-react"
+import { Play, Trophy, Briefcase, BarChart2, Award, X ,Settings  } from "lucide-react"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 
 export function Hero() {
@@ -57,11 +57,12 @@ export function Hero() {
         >
           {/* Left Content */}
           <motion.div variants={itemVariants} className="flex flex-col space-y-6 text-center lg:text-left ">
-            <Badge className="mx-auto lg:mx-0 w-fit text-sm py-1.5 bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 mb-5 mt-5">
+            <Badge className="mx-auto lg:mx-0 w-fit text-md py-1.5 bg-primary/10 text-primary font-bold border-primary/20 hover:bg-primary/20 mb-5 mt-5">
+            <Settings className="animate-spin text-green-400 w-6 h-6" />
               Working for your success
             </Badge>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-snug">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-snug text-pink-700">
               Provides Handwritten <br />
               Notes and College Projects <br />
               <span className="text-primary">Hari Singh Joshi</span>
