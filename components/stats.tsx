@@ -44,8 +44,8 @@ export function Stats() {
   ]
 
   return (
-    <section id="stats" className="py-20">
-      <div className="container px-4 mx-auto">
+    <section id="stats" className="w-full bg-muted py-16">
+      <div className="w-full px-4 md:px-8">
         <motion.div
           ref={ref}
           variants={containerVariants}
