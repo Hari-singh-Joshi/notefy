@@ -42,6 +42,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="google-adsense-account" content="ca-pub-7913957132300666" />
+        <link rel="canonical" href="https://notes-fy.vercel.app/" />
         <link rel="icon" href="/img/favicon.jpg" />
         <link rel="apple-touch-icon" href="/img/favicon.jpg" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7913957132300666"
