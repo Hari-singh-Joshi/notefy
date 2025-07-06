@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://notesfy.vercel.app/sitemap.xml
